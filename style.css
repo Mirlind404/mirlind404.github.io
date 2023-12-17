@@ -156,8 +156,10 @@ button:hover{
 
     .aside-content {
         margin-top: 50px;
-        margin-right: 25px;
         width: auto;
+    }
+    .paragraphs, h1, h2{
+        margin-right: 25px;
     }
 
     .button {
