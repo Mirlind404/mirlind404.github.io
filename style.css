@@ -233,9 +233,11 @@ button:hover{
 
 
         }
-
-
-
+        .navbar{
+            background-color: rgb(9, 50, 74);
+            border-bottom: cyan solid 2px;
+            
+        }
         
     }
 
