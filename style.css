@@ -202,19 +202,41 @@ button:hover{
             height: auto;
             width: auto;
         }
-        .contact-list{
+        .contact-select{
             display: none;
         }
-        .contact-select{
-            display: inline;
-            font-size: 50px;    
-            border-radius: 10%;
-            padding-bottom: 0%;
-            background-color: transparent;
+         .contact-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 5%;
+
         }
+        .photo img{
+            width:60%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
         a {
             text-decoration: none;
+            font-size: small;
         }
+        
+        .navbar img{
+            width: 40%;
+        }
+        .navbar ul a{
+            width: 20px;
+            font-size: 35px;
+
+
+        }
+
+
+
+        
     }
 
 }    
