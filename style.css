@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .banner {
     width: 100%;
@@ -9,11 +9,20 @@
     background:linear-gradient(#071330,#0C4160);
 }
 
+.paragraphs {
+    font-size: 20px;
+}
+
+.footer {
+    display: none;
+}
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar img{
     width: 250px;
     padding: 15px;
@@ -84,7 +93,7 @@ button{
     font-size: medium;
     border: 2px solid cyan;
     background: transparent;
-    color: #fff;
+    color: #C3CEDA;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -110,6 +119,7 @@ button:hover span{
 button:hover{
     border: none;
     box-shadow: none;
+    color: #071330;
 }
 
 .contact-select {
@@ -117,10 +127,13 @@ button:hover{
 }
 
 
+
+
 @media only screen  and (max-width: 980px) {
     body {
         height: auto;
     }
+
     .banner {
         width: 100%;
         height: auto;
@@ -168,7 +181,10 @@ button:hover{
         text-align: center;
     }
 
-
+    .footer{
+        display: none;
+    }
+    
     @media only screen and (min-width:451px)and (max-width: 979px) {
         .button{
             width: 100%;
@@ -195,13 +211,16 @@ button:hover{
             height: auto;
             width: auto;
         }   
+        .footer{
+            display:none;
+        }
     }
 
     @media screen and (max-width: 450px) {
-        body {
-            height: auto;
-            width: auto;
+        .aside-content {
+            margin-bottom: -100px;
         }
+            
         .contact-select{
             display: none;
         }
@@ -210,7 +229,6 @@ button:hover{
             flex-direction: row;
             justify-content: space-between;
             padding-left: 5%;
-
         }
         .photo img{
             width:60%;
@@ -238,7 +256,35 @@ button:hover{
             border-bottom: cyan solid 2px;
             
         }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:rgb(8, 44, 65);
+            color: #C3CEDA;
+            border-top: cyan solid 2px;
+            text-align: center;
+        }
+        .footer h3{
+            margin: 10px;
+        }
         
+        .number,.email{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: #C3CEDA;
+        }
+        .number{
+            margin-left: 12px;
+        }
+        .side-details{
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: small;
+            opacity: .5;
+ 
+        }
     }
 
 }    
